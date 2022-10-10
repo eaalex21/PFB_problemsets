@@ -1,0 +1,131 @@
+    2  ls
+    3  echo "# PFB_problemsets" >> README.md
+    4  git init
+    5  git add README.md
+    6  git commit -m "first commit"
+    7  git branch -M main
+    8  get remote add origin https://github.com/eaalex21/PFB_problemsets.git
+    9  git remote add origin https://github.com/eaalex21/PFB_problemsets.git
+   10  git push -u origin main
+   11  git push -u origin main
+   12  ^[[200~echo "# PFB_problemsets" >> README.md
+   13  git init
+   14  git add README.md
+   15  git commit -m "first commit"
+   16  git branch -M main
+   17  git remote add origin https://github.com/eaalex21/PFB_problemsets.git
+   18  echo "# PFB_problemsets" >> README.md
+   19  git init
+   20  git add README.md
+   21  git commit -m "first commit"
+   22  git branch -M main
+   23  git remote add origin git@github.com:eaalex21/PFB_problemsets.git
+   24  echo "# PFB2022_problems2" >> README.md
+   25  git init
+   26  git add README.md
+   27  git commit -m "first commit"
+   28  git branch -M main
+   29  git remote add origin git@github.com:eaalex21/PFB2022_problems2.git
+   30  git remote add origin git@github.com:eaalex21/PFB2022_problems2.git
+   31  rm -rf .git
+   32  echo "# PFB2022_problems2" >> README.md
+   33  git init
+   34  git add README.md
+   35  git commit -m "first commit"
+   36  git branch -M main
+   37  git remote add origin git@github.com:eaalex21/PFB_problems2.git
+   38  git push -u origin main
+   39  ssh-keygen -t ed25519 -C "aquine1@unlv.nevada.edu"
+   40  eval "(ssh-agent -s)'
+   41  eval "$(ssh-agent -s)'
+   42  eval "$(ssh-agent -s)'\n
+   43  eval "$(ssh-agent -s)"
+   44  open ~/.ssh/config
+   45  touch ~/.ssh/config
+   46  vi ~/.ssh/config
+   47   cat ~/.ssh/id_ed25519.pub
+   48  git push -u origin main
+   49  echo "# PFB2022_problems2" >> README.md
+   50  git init
+   51  git add README.mdj
+   52  git add README.md
+   53  git commit -m "first commit"
+   54  git branch -M main
+   55  git remote add origin git@github.com:eaalex21/PFB2022_problems2.git
+   56  rm -rf .git
+   57  echo "# PFB2022_problems2" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:eaalex21/PFB2022_problems2.git\ngit push -u origin main
+   58  git clone git@github.com:prog4biol/pfb2022.git
+   59  rm -rf .git
+   60  mkdir <pfb_problemsets>
+   61  man mkdir
+   62  mkdir pfb_problemsets
+   63  cd pfb_problemsets
+   64  echo "# PFB_problemsets" >> README.md
+   65  git init
+   66  git add README.md
+   67  git commit -m "first commit"
+   68  git branch -M main
+   69  git remote add origin git@github.com:eaalex21/PFB_problemsets.git
+   70  git push -u origin main
+   71  git clone git@github.com:prog4biol/pfb2022.git
+   72  git status
+   73  mv problemsets pfb_problemsets
+   74  cd ~
+   75  mv problemsets pfb_problemsets
+   76  cd pfb_problemsets
+   77  git status
+   78  git add pfb2022 problemsets
+   79  git commit -m 'adding previous problem set files'
+   80  git push
+   81  man mkdir
+   82  mkdir files
+   83  mv cancer_genes.fasta files
+   84  mv problemsets/cancer_genes.fasta to files
+   85  cd problemsets
+   86  mv cancer_genes.fasta files
+   87  git add files/cancer_genes.fasta
+   88  cd pfb_problemsets
+   89  git add files/cancer_genes.fasta
+   90  cd pfb_problemsets
+   91  cd ~
+   92  cd pfb_problemsets
+   93  git add files/cancer_genes.fasta
+   94  git commit -m 'adding cancer_genes.fasta'
+   95  git push
+   96  cd files
+   97  vi mysequence.txt
+   98  vi mysequence.txt
+   99  vi mysequence.txt
+  100  git add mysequence.txt
+  101  git commit -m 'adding mysequence.txt'
+  102  git push
+  103  mkdir fastas
+  104  mv cancer_genes.fasta fastas
+  105  cd fastas
+  106  ls -F
+  107  cd files
+  108  cd ..
+  109  rm cancer_genes.fasta
+  110  git add fastas/cancer_genes.fasta
+  111  git commit -m 'move cancer_genes to fasta'
+  112  git push
+  113  vi oops.txt
+  114  git add oops.txt
+  115  git commit -m 'adding oops'
+  116  git push
+  117  git rm oops
+  118  git rm oops.txt
+  119  git commit -m 'removing oops'
+  120  git push
+  121  vi oops2
+  122  git add oops2
+  123  git commit -m 'adding oops2'
+  124  git push
+  125  rm oops2
+  126  git add oops2
+  127  git commit -m 'removing oops2'
+  128  git push
+  129  vi never 
+  130  git add never
+  131  git rest never
+  132  git reset never
