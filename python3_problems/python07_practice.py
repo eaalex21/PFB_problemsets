@@ -23,5 +23,12 @@ with open("Python_07_nobody.txt", "r") as py7no_read, open("Python_07_somebody.t
 			
 
 
-
-			
+# fasta finding header 
+with open("Python_07.fasta", 'r') as fasta7:
+	for line in fasta7:
+		line = line.rstrip()
+		for header in re.finditer(r'^>gi.+', line):
+			seqID = header.group(0)
+			seqID_list = seqID.split()
+			desc = ' '.join(seqID_list[1:])
+			print('id:' + str(seqID_list[0]) + ' ' + 'desc:' + desc)
