@@ -24,3 +24,48 @@ for nt in nt_set:
 	nt_count[nt] = count
 gc_content = nt_count['G'] + nt_count['C']
 print("Nucleotide Composition:", nt_count, "GC content:", gc_content)
+
+# opening a file
+py6_txt = open('Python_06.txt', "r")
+for line in py6_txt:
+	line = line.upper()
+	print(line)
+py6_txt.close()
+# opening a file to another
+with open('Python_06.txt', "r") as py6_txt_read, open("Python_06_uc.txt", 'w') as py6_txt_write:
+	for line in py6_txt_read:
+		line = line.upper()
+
+##%  create reverse comp and save with fasta; come back too##
+rcpy6seq = ""
+reverse_dict = {"A":"T", "T":"A", "G":"C", "C":"G"}
+py6seq = {}
+with open("Python_06.seq.txt", 'r') as py6seq_read:
+   for line in py6seq_read:
+     line = line.rstrip()
+     gene_id, seq = line.split('\t')
+     py6seq[gene_id] = seq
+   length = len(seq)
+   for i in range(length):
+     character = seq[length - 1 - i]
+     rcpy6seq = rcpy6seq + reverse_dict.get(character, character)
+     py6seq[gene_id] = rcpy6seq
+   for k, v, in py6seq.items():
+     print('>' + k + '\t' + v + '\n')
+
+# fastq file
+with open('Python_06.fastq', 'r') as py06fastq_read:
+     num_line = sum(1 for line in py06fastq_read)
+     print("Number of lines:", num_line)
+     for line in py06fastq_read:
+             line = line.rstrip()
+             sum_char = sum_char + len(line)
+     print("Total number of characters:", sum_char)
+     avg_line = sum_char / num_line
+     print("Average Length of Lines:", avg_line)
+
+
+
+
+
+
