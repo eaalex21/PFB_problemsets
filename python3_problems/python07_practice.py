@@ -14,8 +14,13 @@ with open("Python_07_nobody.txt", "r") as py7no_read:
 			print(n1, position)
 
 # nobody switch with hendrix
-
-
+with open("Python_07_nobody.txt", "r") as py7no_read, open("Python_07_somebody.txt", "w") as py07hen:
+	for line in py7no_read:
+		line = line.rstrip()
+		somebody = re.sub(r'Nobody','Hendrix', line)
+		py07hen.write(f"{somebody}\n")
+		print(somebody)
+			
 
 
 
