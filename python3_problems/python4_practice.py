@@ -57,8 +57,23 @@ print(sumo)
 for number in range(100):
 	print(number)
 
+# counting to 100 with list comprehension
 hundred = [number + 1 for number in range(100)]
 print(hundred)
+
+# list for data 
+dna = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
+for seq in dna:
+	length = len(seq)
+	print(length + '\t' + seq)
+
+# list tuples
+lengths = [str(len(dna)) + '\t' + seq + '\n' for dna in dna]
+print(lengths)
+
+# modified list 
+position = [str(dna.index(seq) + 1) + '\t' + str(len(seq)) + '\t' + seq + '\n' for seq in dna]
+print(position)
 
 
  
