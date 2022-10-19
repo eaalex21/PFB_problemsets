@@ -67,9 +67,9 @@ def main():
     ## Step 1:
     ## begin your code, populate 'all_kmers' list with the
     ## collection of kmers from all sequences
-    all_seqs = ''.join(seq_list)
-    all_kmers = sequence_to_kmer_list(all_seqs, kmer_length)
-    
+    for sequence in seq_list:
+      kmer_list = sequence_to_kmer_list(sequence, kmer_length)
+      all_kmers.extend(kmer_list) 
     print(all_kmers)
 
 
@@ -87,12 +87,6 @@ def main():
     ## (Note, you can run and test without first implementing Step 3)
     ## begin your code       hint: see the built-in 'sorted' method documentation
     sorted(unique_kmers, reverse=True)
-
-
-
-
-
-
 
 
 
