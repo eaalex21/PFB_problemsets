@@ -1,0 +1,40 @@
+Elaine Aquino
+
+Use the FASTA search page [pgm] to compare Honey bee glutathione transferase D1 NP_001171499/ H9KLY5_APIME [seq] (gi|295842263) to the PIR1 Annotated protein sequence database.
+
+1. Take a look at the output.
+	a. How long is the query sequence? 217 AA
+	b. How many sequences are in the PIR1 database? 13144 sequences
+	c. What scoring matrix was used? BL50 matrix
+	d. What were the gap penalties? (what is the penalty for a one-residue gap? two residues? -- this is a "trick" question) -12 residue gap penalty
+	e. What are each of the numbers after the description of the library sequence? Which one is best for inferring homology? bit score, e-value, %identical, % similar, AA length; e-value
+	f. How similar is the highest scoring sequence? What is the difference between %_id and %_sim? Why is there no 100% identity match? E(3.9e-59); identical must be 100% match and similar does not; the query is not in the database
+	g. Looking at an alignment, where are the boundaries of the alignment (the best local region)? How many gaps are in the best alignment? The second best? 2 regions on from 3-208 AA and 2-206 AA; one for first sequence and 19 or 6 gaps in second sequence
+
+2. Homologs, non-homologs, and the statistical control.
+	a. highest: 3.9e-59 and worst: 5; highst value should be 1; the lowest should be the length of dataset
+	b. Stringent starvation protein A; yes
+	c. Elongation factor 1-delta 2; Shor; is has a low e-value and alignment; NODOM domain * the non homo was 		envelope glycoprotrein B 
+	d. If the statistical estimates are accurate, what should the E()-value for the highest non-homolog (the highest score by chance) be? (This is a control for statistical accuracy.) E(0.0011)
+	e. What is the E()-value of the most distant homolog shown (based on displayed domain content)? Could there be more distant homologs in the database? E(0.17); yes 
+	f. How would you confirm that your candidate non-homolog was truly unrelated? (Hint - compare your candidate non-homolog with SwissProt or QFO78/Uniprot Ref for a more comprehensive test.)look up the alignment/protein in another database
+
+3 Domains and alignments regions
+	a. There are three parts to the domain display, the domain structure of the query (top) sequence (if available), the domain structure of the library (bottom) sequence, and the domain alignment boundaries in the middle (inside the alignment box). The boundaries and color of the alignment domain coloring match the Region: sub-alignment scores.
+	b. Note that the alignment of Honey bee GSTD1 and SSPA_ECO57 includes portions of both the N-terminal and C-terminal domains, but neither domain is completely aligned. Why do you think the alignments do not include the complete domains? the species are too distantly related so its harder to completely align the whole domain
+	c. yes
+
+4. Repeat the GSTD1 search [pgm] using the BLASTP62/-11/-1 scoring matrix  that BLAST uses.
+Re-examine the honey bee/SSPA_ECO57 alignment.
+	a. Are both Glutathione transferase domains present in the honey bee protein? no
+	b. Look at the alignments to the homologs above and below SSPA_ECO57. Based on those. aligments, do you think the Glutathione-S-Trfase C-like domain is really missing from the honey bee protein? nope
+	c. Why did the alignment become shorter? Blast looks for alignments that are harder to detect
+	d. Why would a domain appear to be present in the first (BLOSUM50) search, but not in the second (BLOSUM62)? BLOSUM50 is less stringent and would include more alignments
+
+5. 
+	a. 217 AA
+	b. 13143 sequences
+	c. Blastp62
+	d. 12 AA penalty
+	e. bits score, e-value; e-value
+	f. boundaries: 
