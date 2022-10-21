@@ -38,3 +38,20 @@ Re-examine the honey bee/SSPA_ECO57 alignment.
 	d. 12 AA penalty
 	e. bits score, e-value; e-value
 	f. boundaries: 
+
+6.
+	a. less sensitive and selective then last 
+	b. 
+		i. e-value(4.1); 0.318
+		ii. 222 AA with 29 AA alignment
+		iii. exon 3 is shorter then normal 
+		iv. 0.448
+		v. BLOSUM62
+		vi. 0.031
+		vii.1.2e-16
+	c.
+		i. highest e-value: 0.0016; with 0.842 % identity
+		ii. 19 AA
+		iii. BLOSUM62
+		iv.e_value: 3.1e-05
+		v. e-value: 1.9
